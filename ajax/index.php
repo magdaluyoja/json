@@ -9,10 +9,15 @@
 		<div id="divmenu"><?php include($_SERVER["DOCUMENT_ROOT"]."/json/menu.php"); ?></div>
 
 		<div id="divcontent">
-			<h1>JSON Tutorial</h1>
+
+			<h1>JSON Tutorial : Ajax</h1>
+			<div id="divresult"></div>
 		</div>
 
-		<div id="divfooter"><?php include($_SERVER["DOCUMENT_ROOT"]."/json/footer.php"); ?></div>
+		<div id="divfooter">
+			<?php include($_SERVER["DOCUMENT_ROOT"]."/json/footer.php"); ?>
+			<script src="ajax.js"></script>				
+		</div>
 	</div>
 </body>
 </html>
