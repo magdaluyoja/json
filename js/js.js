@@ -2,7 +2,11 @@ $('document').ready(function(){
 
 	var pathstring = window.location.pathname;
 
-	if(pathstring.search('php_ajax') != -1){
+	if(pathstring.search('post_php_ajax') != -1){
+		$('.links').removeClass('active');
+		$('#post_php_ajax').addClass('active');
+	}
+	else if(pathstring.search('php_ajax') != -1){
 		$('.links').removeClass('active');
 		$('#php_ajax').addClass('active');
 	}
